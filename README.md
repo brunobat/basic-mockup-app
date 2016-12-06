@@ -1,1 +1,1 @@
-# basic-mockup-app
+# basic-testing-app
