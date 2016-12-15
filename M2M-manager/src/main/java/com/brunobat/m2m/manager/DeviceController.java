@@ -2,7 +2,6 @@ package com.brunobat.m2m.manager;
 
 
 import com.brunobat.m2m.manager.model.Device;
-import com.brunobat.m2m.manager.model.Thermometer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,10 +14,8 @@ public class DeviceController {
 
     private final List<Device> devices;
 
-    public DeviceController() {
-        devices = new ArrayList<>();
-        devices.add(new Thermometer("Garage Thermometer"));
-        devices.add(new Thermometer("Outside Thermometer"));
+    public DeviceController(final List<Device> devices) {
+        this.devices = devices;
     }
 
     public List<String> getDeviceNames() {
