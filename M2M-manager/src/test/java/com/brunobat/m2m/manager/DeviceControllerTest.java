@@ -12,14 +12,14 @@ import static org.junit.Assert.assertEquals;
 public class DeviceControllerTest {
 
     @BeforeClass
-    public static void init() {
+    public static void initBeforeAllTests() {
         // setup some static content before test class execution
     }
 
     private DeviceController deviceController;
 
     @Before
-    public void setUp() {
+    public void setUpBeforeEachTest() {
         deviceController = new DeviceController();
     }
 
