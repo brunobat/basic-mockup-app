@@ -3,7 +3,6 @@ package com.brunobat.m2m.manager.model;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.any;
 import static org.hamcrest.core.Is.isA;
 
 /**

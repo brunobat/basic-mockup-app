@@ -1,8 +1,6 @@
 package com.brunobat.m2m.manager;
 
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.*;
 
 import java.util.List;
 
@@ -13,10 +11,21 @@ import static org.junit.Assert.assertEquals;
  */
 public class DeviceControllerTest {
 
+    @BeforeClass
+    public static void init() {
+        // setup some static content before test class execution
+    }
+
+    private DeviceController deviceController;
+
+    @Before
+    public void setUp() {
+        deviceController = new DeviceController();
+    }
+
     @Test
     public void testGetDeviceNames() {
 
-        DeviceController deviceController = new DeviceController();
         final List<String> deviceNames = deviceController.getDeviceNames();
 
         Assert.assertNotNull(deviceNames);
@@ -27,12 +36,12 @@ public class DeviceControllerTest {
 
     /**
      * Failing test
+     *
      * @throws Exception
      */
     @Ignore
     @Test
     public void testGetDeviceStatus() throws Exception {
-        DeviceController deviceController = new DeviceController();
         assertEquals("Device: Garage Thermometer reads: 7\n" +
                 "Device: Outside Thermometer reads: 20", deviceController.getDeviceStatus());
     }
