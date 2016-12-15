@@ -42,8 +42,9 @@ public class DeviceControllerTest {
     @Ignore
     @Test
     public void testGetDeviceStatus() throws Exception {
-        assertEquals("Device: Garage Thermometer reads: 7\n" +
-                "Device: Outside Thermometer reads: 20", deviceController.getDeviceStatus());
+        assertEquals(
+                "Device: Garage Thermometer reads: 7\n" +
+                        "Device: Outside Thermometer reads: 20", deviceController.getDeviceStatus());
     }
 
 }
