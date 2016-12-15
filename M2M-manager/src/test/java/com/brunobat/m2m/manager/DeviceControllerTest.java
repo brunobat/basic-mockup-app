@@ -1,6 +1,7 @@
 package com.brunobat.m2m.manager;
 
 import org.junit.*;
+import org.mockito.Mock;
 import org.mockito.Mockito;
 
 import java.util.HashMap;
@@ -15,11 +16,6 @@ import static org.mockito.Mockito.*;
  * Created by Bruno Baptista on 15/12/16.
  */
 public class DeviceControllerTest {
-
-    @BeforeClass
-    public static void init() {
-        // setup some static content before test class execution
-    }
 
     private DeviceController deviceController;
 
