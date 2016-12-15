@@ -2,6 +2,7 @@ package com.brunobat.m2m.manager;
 
 import com.brunobat.m2m.api.Device;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,10 +28,6 @@ public class ResourceManager {
         }
     }
 
-    public String getReading(final String deviceName) {
-        return devices.get(deviceName).getReading();
-    }
-
     public Map<String, String>  getReadingFromAllDevices() {
         final Map<String, String> result = new HashMap<>();
         for (Map.Entry<String, Device> entry : devices.entrySet()) {
@@ -39,5 +36,12 @@ public class ResourceManager {
         return result;
     }
 
+    public String getReading(final String deviceName) {
+        return devices.get(deviceName).getReading();
+    }
+
+    public Collection<String> getAllDeviceNames(){
+        return devices.keySet();
+    }
 }
 
