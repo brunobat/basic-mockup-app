@@ -1,6 +1,5 @@
-package com.brunobat.m2m.sensors.devices;
+package com.brunobat.m2m.manager.model;
 
-import com.brunobat.m2m.api.Device;
 
 import java.util.concurrent.ThreadLocalRandom;
 

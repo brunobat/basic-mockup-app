@@ -15,16 +15,6 @@
     <name>basicapp :: M2M-manager</name>
 
     <dependencies>
-        <dependency>
-            <groupId>com.brunobat</groupId>
-            <artifactId>M2M-api</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.brunobat</groupId>
-            <artifactId>M2M-sensors</artifactId>
-            <version>${project.version}</version>
-        </dependency>
 
         <!--Test dependencies-->
         <dependency>
