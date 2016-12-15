@@ -21,9 +21,28 @@ public class DeviceController {
         devices.add(new Thermometer("Outside Thermometer"));
     }
 
-    public void printDeviceStatus() {
+    public List<String> getDeviceNames() {
+        final List<String> deviceNames = new ArrayList<>();
         for (Device device : devices) {
-            System.out.print("Device: " + device.getName() + " reads: " + device.getReading());
+            deviceNames.add(device.getName());
         }
+        return deviceNames;
     }
+
+    public void printDeviceStatus() {
+        System.out.print(getDeviceStatus());
+    }
+
+    protected String getDeviceStatus() {
+        final StringBuilder sb = new StringBuilder();
+        for (Device device : devices) {
+            sb.append("Device: ")
+                    .append(device.getName())
+                    .append(" reads: ")
+                    .append(device.getReading())
+                    .append("\n");
+        }
+        return sb.toString();
+    }
+
 }
