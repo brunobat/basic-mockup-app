@@ -11,7 +11,7 @@ import java.util.Map;
  */
 public class DeviceController {
 
-    private final ResourceManager manager;
+    private ResourceManager manager;
 
     public DeviceController() {
         manager = new ResourceManager();
@@ -50,5 +50,13 @@ public class DeviceController {
 
     public List<String> getDeviceNames() {
         return new ArrayList<>(manager.getAllDeviceNames());
+    }
+
+    public ResourceManager getManager() {
+        return manager;
+    }
+
+    public void setManager(ResourceManager manager) {
+        this.manager = manager;
     }
 }

@@ -1,7 +1,6 @@
 package com.brunobat.m2m.sensors;
 
 import com.brunobat.m2m.api.Device;
-import com.brunobat.m2m.sensors.devices.Thermometer;
 
 import java.util.ArrayList;
 import java.util.List;

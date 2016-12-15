@@ -1,7 +1,6 @@
-package java.com.brunobat.m2m.sensors.devices;
+package com.brunobat.m2m.sensors;
 
 import com.brunobat.m2m.api.Device;
-import com.brunobat.m2m.sensors.devices.Thermometer;
 import org.junit.Assert;
 import org.junit.Test;
 

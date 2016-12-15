@@ -1,4 +1,4 @@
-package com.brunobat.m2m.sensors.devices;
+package com.brunobat.m2m.sensors;
 
 import com.brunobat.m2m.api.Device;
 
@@ -7,11 +7,11 @@ import java.util.concurrent.ThreadLocalRandom;
 /**
  * Created by Bruno Baptista on 14/12/16.
  */
-public class Thermometer implements Device {
+class Thermometer implements Device {
 
     private final String name;
 
-    public Thermometer(final String name) {
+    Thermometer(final String name) {
         this.name = name;
     }
 
