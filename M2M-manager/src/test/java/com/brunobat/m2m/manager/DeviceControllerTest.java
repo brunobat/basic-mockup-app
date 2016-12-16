@@ -1,12 +1,15 @@
 package com.brunobat.m2m.manager;
 
-import org.junit.*;
-import org.mockito.Mock;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Test;
 import org.mockito.Mockito;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.anyString;
@@ -16,6 +19,8 @@ import static org.mockito.Mockito.*;
  * Created by Bruno Baptista on 15/12/16.
  */
 public class DeviceControllerTest {
+
+    private static final Logger LOGGER = Logger.getLogger(DeviceControllerTest.class.getName());
 
     private DeviceController deviceController;
 
@@ -28,6 +33,8 @@ public class DeviceControllerTest {
     public void testGetDeviceNames() {
 
         final List<String> deviceNames = deviceController.getDeviceNames();
+
+        LOGGER.info("Device Names: " + deviceNames);
 
         Assert.assertNotNull(deviceNames);
         assertEquals(2, deviceNames.size());
